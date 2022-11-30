@@ -24,6 +24,16 @@
     {{ partial "footer.html" . }}
   </main>
 
+  <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-FKZ4F1LZD5"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-FKZ4F1LZD5');
+</script>
+
   {{ if .HasShortcode "mermaid" }}
   <script src="https://cdn.jsdelivr.net/npm/mermaid@9.1.5/dist/mermaid.min.js" integrity="sha256-RqbL4xBKYq/iP+616ZrXdmaNyCuRX1mW7wjsHPfa8uY=" crossorigin="anonymous"></script>
   <script>
